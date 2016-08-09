@@ -15,11 +15,19 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (CrossPlatformInputManager.GetButton("Fire1")){
-			record = false;
-		} else {
-			record = true;
-		}
+//		if (CrossPlatformInputManager.GetButton("Fire1")){
+//			record = false;
+//		} else {
+//			record = true;
+//		}
 
+	}
+
+	public void Record() {
+		record = true;
+	}
+
+	public void Playback() {
+		record = false;
 	}
 }

@@ -35,11 +35,7 @@ public class MyReplay : MonoBehaviour {
 
 	void PlayBack ()
 	{
-		if (Time.frameCount < bufferFrames) {
-			int frame = Time.frameCount % bufferFrames;
-		} else {
-			int frame = Time.frameCount % bufferFrames;
-		}
+		int frame = Time.frameCount % bufferFrames;
 		rigidBody.isKinematic = true;
 
 		print ("Reading frame " + frame);
